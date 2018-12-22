@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OSRS Quest Tool</title>
+    <link rel="stylesheet" type="text/css" href="css/v1.0.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <a href="https://oldschool.runescape.wiki/" target="_blank">
+        <img src="images/osrsLogo.png" alt="Old School Runescape Logo"></a>
+        <h2>Quest Eligibility Tool</h2>
+        <h3>Enter your stats</h3>        
+    </header>
+
+    <div class="wrapper">
+        <form id="stats-input-table">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img class="skill-icon" src="images/attack.webp">
+                            <input class="skill" id="attackLv" type="text">
+                        </td>
+                        <td>
+                            <img class="skill-icon" src="images/strength.webp">
+                            <input class="skill" id="strengthLv" type="text">
+                        </td>
+                        <td>
+                            <img class="skill-icon" src="images/defence.webp">
+                            <input class="skill" id="defenceLv" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="skill-icon" src="images/ranged.webp">
+                            <input class="skill" id="rangedLv" type="text">
+                        </td>
+                        <td>
+                            <img class="skill-icon" src="images/prayer.webp">
+                            <input class="skill" id="prayerLv" type="text">
+                        </td>
+                        <td>
+                            <img class="skill-icon" src="images/magic.webp">
+                            <input class="skill" id="magicLv" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="skill-icon" src="images/runecrafting.webp">
+                            <input class="skill" id="runecraftingLv" type="text">
+                        </td>
+                        <td>
+                            <img class="skill-icon" src="images/construction.webp">
+                            <input class="skill" id="constructionLv" type="text">
+                        </td>
+                        <td>
+                            <img class="skill-icon" src="images/hitpoints.webp">
+                            <input class="skill" id="hitpointsLv" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="skill-icon" src="images/agility.png">
+                            <input class="skill" id="agilityLv" type="text">
+                        </td>
+                        <td>
+                            <img class="skill-icon" src="images/herblore.webp">
+                            <input class="skill" id="herbloreLv" type="text">
+                        </td>
+                        <td>
+                            <img class="skill-icon" src="images/thieving.webp">
+                            <input class="skill" id="thievingLv" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="skill-icon" src="images/crafting.webp">
+                            <input class="skill" id="craftingLv" type="text">
+                        </td>
+                        <td>
+                            <img class="skill-icon" src="images/fletching.webp">
+                            <input class="skill" id="fletchingLv" type="text">
+                        </td>
+                        <td>
+                            <img class="skill-icon" src="images/slayer.png">
+                            <input class="skill" id="slayerLv" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="skill-icon" src="images/hunter.webp">
+                            <input class="skill" id="hunterLv" type="text">
+                        </td>
+                        <td>
+                            <img class="skill-icon" src="images/mining.webp">
+                            <input class="skill" id="miningLv" type="text">
+                        </td>
+                        <td>
+                            <img class="skill-icon" src="images/smithing.webp">
+                            <input class="skill" id="smithingLv" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="skill-icon" src="images/fishing.webp">
+                            <input class="skill" id="fishingLv" type="text">
+                        </td>
+                        <td>
+                            <img class="skill-icon" src="images/cooking.webp">
+                            <input class="skill" id="cookingLv" type="text">
+                        </td>
+                        <td>
+                            <img class="skill-icon" src="images/firemaking.webp">
+                            <input class="skill" id="firemakingLv" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="skill-icon" src="images/woodcutting.webp">
+                            <input class="skill" id="woodcuttingLv" type="text">
+                        </td>
+                        <td>
+                            <img class="skill-icon" src="images/farming.webp">
+                            <input class="skill" id="farmingLv" type="text">
+                        </td>
+                        <td><button id="submit-stats">Submit</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        
+        </form>
+        
+        
+        
+        <div id="eligible-quests">
+            <table id="quest-table"></table>
+        </div>
+    </div>
+    <footer>
+        <p><i class="far fa-envelope"></i> negatronbear@gmail.com</p>
+        <p><i class="fab fa-twitter"></i> @negatronbear</p>
+    </footer>
+
+    <script src="scripts/quests.js"></script>
+    <script src="scripts/functions.v1.0.js"></script>
+    <script src="scripts/app.v1.0.js"></script>
+</body>
+</html>

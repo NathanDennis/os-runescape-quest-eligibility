@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "header"
+        "wrapper";
+    justify-items: center;
+    font-family: 'IBM Plex Sans','Helvetica Neue','Arial',sans-serif;
+    background-color: rgb(226, 219, 200);
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+#stats-input-table {
+    grid-area: "form";
+}
+
+#eligible-quests {
+    grid-area: "quests";
+    overflow: auto;
+    height: 350px;
+}
+
+table {
+    background-color: rgb(192, 168, 133);
+    border-radius: 7px;
+    margin: 10px;
+    /* border: black 1px solid; */
+}
+
+input {
+    width: 25px;
+    height: 25px;
+    float: right;
+    margin: auto 2px auto 2px;
+    border: black 1px solid;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: rgb(207, 207, 207);
+    transition: 0.2s;
+}
+
+footer {
+    text-align: center;
+    /* margin-top: 15px; */
+    /* border: solid black 1px; */
+}
+
+@media(min-width: 580px){
+    .wrapper {
+        display: grid;
+        grid-area: "wrapper";
+        grid-template-columns: "auto auto";
+        grid-template-areas: "form quests";
+        align-items: start;
+    }
+}
